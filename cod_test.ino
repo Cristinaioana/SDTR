@@ -27,22 +27,22 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   distance = (duration / 2) / 29.1;
   Serial.print("Distanta masurata in fata(cm): ");
-  Serial.print(distance); // afisare distanta(cm);
+  Serial.print(distance); 
   Serial.println(" ");
   delay(100);
 
-  if (distance > 25  )  // daca distanta > 25 cm;
+  if (distance > 25  )  
     { 
-      digitalWrite(4, LOW); // led rosu off;
-      digitalWrite(3, LOW);  // led albastru off;
-      digitalWrite(2, LOW);  // led verde off;
+      digitalWrite(4, LOW); 
+      digitalWrite(3, LOW);  
+      digitalWrite(2, LOW);  
       
     }
     else if (distance < 25 && distance >= 20 )
     {
-      digitalWrite(4, LOW); // led rosu off;
-      digitalWrite(3, LOW);  // led albastru off;
-      digitalWrite(2, HIGH); // led verde on;
+      digitalWrite(4, LOW); 
+      digitalWrite(3, LOW);  
+      digitalWrite(2, HIGH); 
    
     }
     
