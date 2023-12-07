@@ -38,7 +38,7 @@ void loop() {
       digitalWrite(2, LOW);  // led verde off;
       
     }
-    else if (distance < 25 && distance >= 20 ) // daca distanta intre 25cm si 20cm -> led VERDE ON si buzzer activ;
+    else if (distance < 25 && distance >= 20 )
     {
       digitalWrite(4, LOW); // led rosu off;
       digitalWrite(3, LOW);  // led albastru off;
@@ -46,7 +46,7 @@ void loop() {
    
     }
     
-    else if (distance <= 20 && distance >= 10 ) //daca distanta intre 20 si 10 cm -> led GALBEN ON si buzzer activ;
+    else if (distance <= 20 && distance >= 10 ) 
     {
       digitalWrite(4, LOW);
       digitalWrite(3, HIGH);
@@ -54,7 +54,7 @@ void loop() {
      
     } 
     
-    else if (distance < 10 && distance > 0 ) // daca distanta < 10 cm -> led ROSU ON si buzzer activ;
+    else if (distance < 10 && distance > 0 ) 
     {
       digitalWrite(4, HIGH);
       digitalWrite(3, HIGH);
